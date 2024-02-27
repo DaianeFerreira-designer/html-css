@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personalizando links</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+       a{
+        color: aqua;
+        text-decoration: none;
+       }
+
+       a:visited{
+        color: blue;
+       }
+        
+       a:hover{
+        color: brown;
+        text-decoration: underline;
+       }
+       
+       a:active{
+        color: rgb(243, 243, 17);
+       }
+
+       a::before{
+        content: '*';
+       }
+     
+       a::after {
+        content: '*';
+       }
+
+       #especial{
+        background-color: blueviolet;
+        color: antiquewhite;
+       }
+
+       #especial:hover{
+        background-color: blue;
+       }
+
+       #especial::before{
+       content: '$';
+       }
+
+       #especial::after{
+        content: '$';
+       }
+    </style>
+</head>
+<body>
+    <h1> Utiliando os Pseudo-Elementos:</h1>
+    <ul>
+        <li> <a href="https://www.behance.net/daiane_ferreira" target="_blank">Portfólio</a></li>
+        <li> <a href="https://redesenhesuavida.daianeferreira.com.br/ebook/" target="_blank" id="especial">Compre meu ebook</a></li>
+        <li> <a href="http://www.daianeferreira.com.br/kit-do-designer/" target="_blank">Visite meu site</a></li>
+    </ul>
+</body>
+</html>
