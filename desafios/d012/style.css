@@ -26,4 +26,38 @@ header >p{
   padding-bottom: 50px;
   
 }
-   
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+    
+}
+section.normal{
+    background-color: #fff;
+    color: black;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.753);
+    color: #fff;
+}
+section.imagem > p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.377);
+}
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
